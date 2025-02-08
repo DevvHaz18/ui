@@ -1146,10 +1146,7 @@ do
                 --
                 local AxisX = Side == "Left" and SecondBorderOutline.Position.X + 6 or SecondBorderOutline.Position.X + ((SecondBorderOutline.Size.X / 2) - 10) + 12
                 local SectionInline = Utility.AddDrawing("Square", {
-                    Position = Vector2.new(AxisX, (Tab.SectionAxis[Side == "Left" and 1 or 2] == 0 
-    and TabOutline.Position.Y + TabOutline.Size.Y + 20 -- Increased from 6 to 20
-    or 10 + Tab.SectionAxis[Side == "Left" and 1 or 2] + 10)) -- Added extra 10 spacing
-
+                    Position = Vector2.new(AxisX, (Tab.SectionAxis[Side == "Left" and 1 or 2] == 0 and TabOutline.Position.Y + TabOutline.Size.Y + 20 or 16 + Tab.SectionAxis[Side == "Left" and 1 or 2]))
                     Size = Vector2.new((SecondBorderOutline.Size.X / 2) - 8, 24),
                     Thickness = 0,
                     Color = Library.Theme.Inline,
