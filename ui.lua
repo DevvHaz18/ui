@@ -1141,7 +1141,7 @@ do
             --
             function Tab:Section(Title, Side)
                 local Section = {
-                    ContentAxis = 3
+                    ContentAxis = -5
                 }
                 --
                 local AxisX = Side == "Left" and SecondBorderOutline.Position.X + 6 or SecondBorderOutline.Position.X + ((SecondBorderOutline.Size.X / 2) - 10) + 12
