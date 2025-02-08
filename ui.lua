@@ -1045,7 +1045,7 @@ do
         function Window:Tab(Title)
             local Tab = {
                 Visible = {},
-                SectionAxis = {0, 0},
+                SectionAxis = {50, 10},
                 Sections = {},
                 Dropdowns = {
                     ["Left"] = {}, 
