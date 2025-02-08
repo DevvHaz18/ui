@@ -46,7 +46,7 @@ local Library = {
         Text = Color3.fromHex("#e8e8e8"),
         TextInactive = Color3.fromHex("#aaaaaa"),
         Font = Drawing.Fonts.Plex,
-        TextSize = 13,
+        TextSize = 16,
         UseOutline = false
     },
     Icons = {},
